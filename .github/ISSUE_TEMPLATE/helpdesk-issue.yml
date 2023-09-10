@@ -16,7 +16,7 @@ body:
       description: Link to the issue in Zendesk
       placeholder: ex. https://fac-something.zendesk.com/something/...
     validations:
-      required: true
+      required: false
   - type: checkboxes
     id: fac-components
     attributes:
@@ -31,6 +31,18 @@ body:
         - label: other
     validations:
       required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: What browser did the user report as using?
+      multiple: false
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - None reported
+        - Other (Opera, Brave, etc.)  
   - type: textarea
     id: what-happened
     attributes:
@@ -39,15 +51,3 @@ body:
       placeholder: Also, please attach any workbooks/files included here by drag-and-dropping them onto the textarea.
     validations:
       required: true
-  - type: dropdown
-    id: browser
-    attributes:
-      label: What browser did the user report as using?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-        - None reported
-        - Other (Opera, Brave, etc.)
