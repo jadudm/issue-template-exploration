@@ -41,7 +41,6 @@ body:
         - Chrome
         - Safari
         - Microsoft Edge
-        - None reported
         - Other (Opera, Brave, etc.)  
   - type: textarea
     id: what-happened
