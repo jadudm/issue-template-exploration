@@ -16,7 +16,7 @@ body:
       description: Link to the issue in Zendesk
       placeholder: ex. https://fac-something.zendesk.com/something/...
     validations:
-      required: false
+      required: true
   - type: checkboxes
     id: fac-components
     attributes:
