@@ -36,7 +36,7 @@ body:
     attributes:
       label: What happened?
       description: Paste the user's ticket here or otherwise summarize.
-      placeholder: Please attach any workbooks/files included here by drag-and-dropping them onto the textarea.
+      placeholder: Also, please attach any workbooks/files included here by drag-and-dropping them onto the textarea.
     validations:
       required: true
   - type: dropdown
