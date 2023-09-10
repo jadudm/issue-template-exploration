@@ -8,56 +8,44 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Lets make the FAC better by fixing all the things.
   - type: input
-    id: contact
+    id: zendesk-link
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: Zendesk link
+      description: Link to the issue in Zendesk
+      placeholder: ex. https://fac-something.zendesk.com/something/...
     validations:
       required: false
+  - type: checkboxes
+    id: fac-components
+    label: FAC components involved
+    description: Select all that apply
+    options:
+      - label: submission system (app.fac.gov)
+      - label: workbooks
+      - label: static site (fac.gov)
+      - label: The helpdesk (zendesk)
+      - label: API (api.fac.gov)
+      - label: other
+    required: true
   - type: textarea
     id: what-happened
     attributes:
       label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      description: Paste the user's ticket here or otherwise summarize.
+      placeholder: Please attach any workbooks/files included here by drag-and-dropping them onto the textarea.
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: browser
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-      default: 0
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
+      label: What browser did the user report as using?
       multiple: true
       options:
         - Firefox
         - Chrome
         - Safari
         - Microsoft Edge
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+        - None reported
+        - Other (Opera, Brave, etc.)
