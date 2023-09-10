@@ -19,15 +19,16 @@ body:
       required: false
   - type: checkboxes
     id: fac-components
-    label: FAC components involved
-    description: Select all that apply
-    options:
-      - label: submission system (app.fac.gov)
-      - label: workbooks
-      - label: static site (fac.gov)
-      - label: The helpdesk (zendesk)
-      - label: API (api.fac.gov)
-      - label: other
+    attributes:
+      label: FAC components involved
+      description: Select all that apply
+      options:
+        - label: submission system (app.fac.gov)
+        - label: workbooks
+        - label: static site (fac.gov)
+        - label: The helpdesk (zendesk)
+        - label: API (api.fac.gov)
+        - label: other
     required: true
   - type: textarea
     id: what-happened
