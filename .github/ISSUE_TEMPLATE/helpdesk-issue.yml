@@ -29,7 +29,8 @@ body:
         - label: The helpdesk (zendesk)
         - label: API (api.fac.gov)
         - label: other
-    required: true
+    validations:
+      required: true
   - type: textarea
     id: what-happened
     attributes:
