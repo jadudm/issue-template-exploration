@@ -4,6 +4,7 @@ title: "[HD]: "
 labels: ["helpdesk"]
 assignees:
   - jadudm
+  - carley-sullivan
 body:
   - type: markdown
     attributes:
@@ -46,8 +47,7 @@ body:
   - type: markdown
       attributes:
         value: |
-          Audits are not yet public at this point. Places all files and screenshots
-          in the Google Drive Helpdesk folder and link to that folder here.
+          Audits are not yet public at this point. Places all files and screenshots in the Google Drive Helpdesk folder and link to that folder here.
   - type: input
     id: gdrive-link
     attributes:
