@@ -45,9 +45,9 @@ body:
         - Microsoft Edge
         - Other (Opera, Brave, etc.)  
   - type: markdown
-      attributes:
-        value: |
-          Audits are not yet public at this point. Places all files and screenshots in the Google Drive Helpdesk folder and link to that folder here.
+    attributes:
+      value: |
+        Audits are not yet public at this point. Places all files and screenshots in the Google Drive Helpdesk folder and link to that folder here.
   - type: input
     id: gdrive-link
     attributes:
