@@ -8,7 +8,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Lets make the FAC better by fixing all the things.
+        Remember to keep all PII out of tickets. 
+        Do not use names, and do not attach files to this ticket. 
   - type: input
     id: zendesk-link
     attributes:
@@ -16,7 +17,7 @@ body:
       description: Link to the issue in Zendesk
       placeholder: ex. https://fac-something.zendesk.com/something/...
     validations:
-      required: false
+      required: true
   - type: checkboxes
     id: fac-components
     attributes:
@@ -42,11 +43,24 @@ body:
         - Safari
         - Microsoft Edge
         - Other (Opera, Brave, etc.)  
+  - type: markdown
+      attributes:
+        value: |
+          Audits are not yet public at this point. Places all files and screenshots
+          in the Google Drive Helpdesk folder and link to that folder here.
+  - type: input
+    id: gdrive-link
+    attributes:
+      label: Gdrive link
+      description: Link to supporting files in GDrive
+      placeholder: ex. https://google.com/drive/something/...
+    validations:
+      required: false  
   - type: textarea
     id: what-happened
     attributes:
       label: What happened?
-      description: Paste the user's ticket here or otherwise summarize.
-      placeholder: Also, please attach any workbooks/files included here by drag-and-dropping them onto the textarea.
+      description: Summarize the issue the user is experiencing. 
+      placeholder: 
     validations:
       required: true
