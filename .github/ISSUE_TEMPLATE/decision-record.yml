@@ -54,6 +54,14 @@ body:
     validations:
       required: true
   - type: textarea
+    id: options
+    attributes:
+      label: Options considered
+      description: Options being considered (optional) 
+      placeholder: 
+    validations:
+      required: false
+  - type: textarea
     id: decision
     attributes:
       label: Decision
