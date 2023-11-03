@@ -56,7 +56,7 @@ body:
   - type: textarea
     id: decision
     attributes:
-      label: decision
+      label: Decision
       description: Decision being recorded 
       placeholder: 
     validations:
