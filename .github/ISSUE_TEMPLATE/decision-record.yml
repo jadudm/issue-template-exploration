@@ -1,0 +1,71 @@
+name: Decision record discussion
+description: Used to capture decision records and conversation.
+title: "[DECREC]: "
+labels: ["decision-record"]
+body:
+  # - type: markdown
+  #   attributes:
+  #     value: |
+  #       Remember to keep all PII out of tickets. 
+  #       Do not use names, and do not attach files to this ticket. 
+  - type: checkboxes
+    id: fac-area
+    attributes:
+      label: Areas of impact
+      description: Select all that apply
+      options:
+        - label: Content
+        - label: CX
+        - label: Design
+        - label: Engineering
+        - label: Product
+        - label: UX
+    validations:
+      required: true
+  # - type: dropdown
+  #   id: browser
+  #   attributes:
+  #     label: What browser did the user report as using?
+  #     multiple: false
+  #     options:
+  #       - Firefox
+  #       - Chrome
+  #       - Safari
+  #       - Microsoft Edge
+  #       - Other (Opera, Brave, etc.)  
+  # - type: markdown
+  #   attributes:
+  #     value: |
+  #       Audits are not yet public at this point. Places all files and screenshots in the Google Drive Helpdesk folder and link to that folder here.
+  - type: input
+    id: related-docs-link
+    attributes:
+      label: Related documents
+      description: Link to supporting files in GDrive / Github
+      placeholder: ex. https://google.com/drive/something/...
+    validations:
+      required: false  
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Summarize the context for the decision 
+      placeholder: 
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: decision
+      description: Decision being recorded 
+      placeholder: 
+    validations:
+      required: true
+  - type: textarea
+    id: Consequences
+    attributes:
+      label: Consequences
+      description: Consequences for the product/team as a result of this decision 
+      placeholder: 
+    validations:
+      required: true
