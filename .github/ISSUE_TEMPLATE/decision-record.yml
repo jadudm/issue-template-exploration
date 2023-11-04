@@ -2,6 +2,8 @@ name: Decision record discussion
 description: Used to capture decision records and conversation.
 title: "[DECREC]: "
 labels: ["decision-record"]
+# PROJECT-OWNER/PROJECT-NUMBER
+# projects: [""]
 body:
   # - type: markdown
   #   attributes:
@@ -18,6 +20,8 @@ body:
         - label: CX
         - label: Design
         - label: Engineering
+        - label: Other
+        - label: Policy
         - label: Product
         - label: UX
     validations:
